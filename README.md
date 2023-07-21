@@ -1,5 +1,5 @@
-[<img src="https://assets.signaloid.io/add-to-signaloid-cloud-logo-dark-v6.svg#gh-dark-mode-only" alt="[Add to signaloid.io]" height="30">](https://signaloid.io/repositories?connect=[<your repository URL here>](https://github.com/arixara/Signaloid-Demo-General-CXX)#gh-dark-mode-only)
-[<img src="https://assets.signaloid.io/add-to-signaloid-cloud-logo-light-v6.svg#gh-light-mode-only" alt="[Add to signaloid.io]" height="30">](https://signaloid.io/repositories?connect=[<your repository URL here>](https://github.com/arixara/Signaloid-Demo-General-CXX)#gh-light-mode-only)
+[<img src="https://assets.signaloid.io/add-to-signaloid-cloud-logo-dark-v6.png#gh-dark-mode-only" alt="[Add to signaloid.io]" height="30">](https://signaloid.io/repositories?connect=https://github.com/arixara/Signaloid-Demo-General-CXX#gh-dark-mode-only)
+[<img src="https://assets.signaloid.io/add-to-signaloid-cloud-logo-light-v6.png#gh-light-mode-only" alt="[Add to signaloid.io]" height="30">](https://signaloid.io/repositories?connect=https://github.com/arixara/Signaloid-Demo-General-CXX#gh-light-mode-only)
 
 # C++ Project Template for the Signaloid Cloud Developer Platform
 This is a minimal example to get you started with setting up C++ repositories in GitHub that you can then run on the Signaloid Cloud Developer Platform. The repository contains a C++ source file in the `src` folder which gets compiled and executed by the Signaloid Cloud Developer Platform.
@@ -35,7 +35,7 @@ In this repository, the file [`src/config.mk`](./src/config.mk) contains
 SOURCES  = main.cpp
 CXXFLAGS = -DDEBUG
 ```
-This tells the Signaloid Cloud Developer Platform to build the [`main.cpp`](./src/main.cpp) file using the compiler flag `-DDEBUG` (i.e., defining the symbol `DEBUG`).
+This tells the  Cloud Developer Platform to build the [`main.cpp`](./src/main.cpp) file using the compiler flag `-DDEBUG` (i.e., defining the symbol `DEBUG`).
 
 ### Headers
 Place your header files in the `src` folder. This folder is part of the build include path.
@@ -44,24 +44,24 @@ Place your header files in the `src` folder. This folder is part of the build in
 It is possible to include C source files in your C++ project. To do so, first, make sure your source files have the appropriate declarations to work with C++ (`extern "C"`). You can then simply add the source files to the build process by adding them to the `SOURCES` list in `config.mk`.
 
 ### Libraries
-During the build process, the Signaloid Cloud Developer Platform links the compiled object files against the following libraries:
+During the build process, the  Cloud Developer Platform links the compiled object files against the following libraries:
 - `libc`: the C standard library;
 - `libm`: the C math library (with function prototypes and other definitions in `math.h`);
 - `libstdc++`: the C++ standard library;
 - `UxHw`: a library that exposes functionalities of uncertainty-tracking computer architectures (with function prototypes and other definitions in `uxhw.h`).
 
-`UxHw` allows applications to access and inject uncertainty information into the underlying microarchitectures. You can find out more about `UxHw` in the [UxHw documentation](https://docs.signaloid.dev/).
+`UxHw` allows applications to access and inject uncertainty information into the underlying microarchitectures. You can find out more about `UxHw` in the [UxHw documentation](https://docs..dev/).
 
-## 🍰 Accessing Your GitHub Repository from the Signaloid Cloud Developer Platform
-There are two ways to access a GitHub repository from the Signaloid Cloud Developer Platform.
+## 🍰 Accessing Your GitHub Repository from the  Cloud Developer Platform
+There are two ways to access a GitHub repository from the  Cloud Developer Platform.
 
-### Option 1:  Using the “Add to signaloid.io” Button
-This first option makes it easiest for you (and other GitHub users) to run your repository on the Signaloid Cloud Developer Platform. Edit the snippet at the top of this `README.md` to include the URL of your Git repository.
+### Option 1:  Using the “Add to .io” Button
+This first option makes it easiest for you (and other GitHub users) to run your repository on the  Cloud Developer Platform. Edit the snippet at the top of this `README.md` to include the URL of your Git repository.
 
 The text you need to change is (replacing the text `<your repository URL here>`):
 ```html
-[<img src="https://assets.signaloid.io/add-to-signaloid-cloud-logo-dark-v6.svg#gh-dark-mode-only" alt="[Add to signaloid.io]" height="30">](https://signaloid.io/repositories?connect=[<your repository URL here>](https://github.com/arixara/Signaloid-Demo-General-CXX)#gh-dark-mode-only)
-[<img src="https://assets.signaloid.io/add-to-signaloid-cloud-logo-light-v6.svg#gh-light-mode-only" alt="[Add to signaloid.io]" height="30">](https://signaloid.io/repositories?connect=[<your repository URL here>](https://github.com/arixara/Signaloid-Demo-General-CXX)#gh-light-mode-only)
+[<img src="https://assets.signaloid.io/add-to-signaloid-cloud-logo-dark-v6.svg#gh-dark-mode-only" alt="[Add to signaloid.io]" height="30">](https://signaloid.io/repositories?connect=https://github.com/arixara/Signaloid-Demo-General-CXX#gh-dark-mode-only)
+[<img src="https://assets.signaloid.io/add-to-signaloid-cloud-logo-light-v6.svg#gh-light-mode-only" alt="[Add to signaloid.io]" height="30">](https://signaloid.io/repositories?connect=https://github.com/arixara/Signaloid-Demo-General-CXX#gh-light-mode-only)
 ```
 
 Next, go to the repository's Github page and click on the “Add to signaloid.io” button.
